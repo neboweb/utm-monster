@@ -1,6 +1,4 @@
-jQuery.gaVariables = function() {
- 
-  var _utmValues = _get_cookies();
+jQuery.utm = function(utm_values) {
  
   var _get_cookies = function()
   {
@@ -27,7 +25,5 @@ jQuery.gaVariables = function() {
    
   }
 
-  return {
-    source : _utmValues
-  }
+  return _get_cookies;
 }
