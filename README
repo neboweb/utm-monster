@@ -1,0 +1,11 @@
+Returns an object of the utm cookie values
+
+Usage Examples:
+source      : $.utm().utmcsr
+campaign    : $.utm().utmccn
+medium      : $.utm().utmcmd
+keyword     : $.utm().utmctr
+ad_content  : $.utm().utmcct
+
+Requires Google Analytics and jQuery
+
