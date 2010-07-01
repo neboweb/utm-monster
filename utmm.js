@@ -1,3 +1,13 @@
+//  Returns an object of the utm cookie values
+//
+//  Usage Exmaples:
+//  source      : $.utm.umtcsr
+//  campaign    : $.utm.utmccn
+//  medium      : $.utm.utmcmd
+//  keyword     : $.utm.utmctr
+//  ad_content  : $.utm.utmcct
+// 
+
 jQuery.utm = function() {
   if (document.cookie && document.cookie != '')
   {
