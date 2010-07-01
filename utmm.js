@@ -8,7 +8,7 @@ jQuery.utm = function() {
       cookie = decodeURIComponent($.trim(cookie));
       if (cookie.substring(0, 7) == "__utmz=")
       {
-        $.each(cookie.match(/utmc[a-z]*=\(?[a-z]*\)?/g), function(i, part)
+        $.each(cookie.match(/utmc[a-z]*=\(?[a-z:. ]*\)?/g), function(i, part)
         {
           var pieces = part.split('=');
           var name =pieces[0];
