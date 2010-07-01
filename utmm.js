@@ -1,3 +1,6 @@
+jQuery.utm = function() {
+  if (document.cookie && document.cookie != '')
+  {
     var utm_vals = {}
     var cookies = document.cookie.split(';');
     $.each(document.cookie.split(';'), function(i, cookie)
