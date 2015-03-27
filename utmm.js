@@ -6,7 +6,7 @@ jQuery.utm = function() {
     $.each(document.cookie.split(';'), function(i, cookie)
     {
       cookie = decodeURIComponent($.trim(cookie));
-      if (cookie.substring(0, 7) == "__utmz=")
+      if (trim(cookie.substring(0, 7) == "__utmz="))
       {
         $.each(cookie.match(/utmc[a-z]*=\(?[0-9a-zA-Z:. ]*\)?/g), function(i, part)
         {
